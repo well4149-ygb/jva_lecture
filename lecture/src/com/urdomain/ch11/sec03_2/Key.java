@@ -2,7 +2,7 @@ package com.urdomain.ch11.sec03_2;
 
 public class Key {
 	public int number;
-	
+	//»ı¼ºÀÚ
 	public Key(int number) {
 		this.number = number;
 	}
@@ -20,9 +20,6 @@ public class Key {
 
 	@Override
 	public int hashCode() {
-		// TODO Auto-generated method stub
 		return number;
 	}
-	
-	
 }

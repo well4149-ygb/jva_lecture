@@ -9,15 +9,11 @@ public class MultiCatchExample {
 			int value2 = Integer.parseInt(data2);
 			int result = value1 + value2;
 			System.out.println(data1 + "+" + data2 + "=" + result);
-		
-		} 
-		catch(ArrayIndexOutOfBoundsException | NumberFormatException e) {
+		} catch (ArrayIndexOutOfBoundsException | NumberFormatException e) {
 			System.out.println("실행 매개값의 수가 부족하거나 숫자로 변환할 수 없습니다..");
-		} 
-		catch(Exception e) {
+		} catch (Exception e) {
 			System.out.println("알수 없은 예외 발생");
-		} 
-		finally {
+		} finally {
 			System.out.println("다시 실행하세요.");
 		}
 	}

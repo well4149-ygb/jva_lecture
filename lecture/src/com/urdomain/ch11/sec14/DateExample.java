@@ -1,10 +1,12 @@
 package com.urdomain.ch11.sec14;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
+import java.text.*;
+import java.util.*;
+
 
 public class DateExample {
 	public static void main(String[] args) {
+		
 		Date now = new Date();
 		String strNow1 = now.toString();		
 		System.out.println(strNow1);

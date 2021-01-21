@@ -2,7 +2,7 @@ package com.urdomain.ch11.sec03_1;
 
 public class Member {
 	public String id;
-	
+
 	public Member(String id) {
 		this.id = id;
 	}
@@ -10,19 +10,19 @@ public class Member {
 	@Override
 	public boolean equals(Object obj) {
 		// TODO Auto-generated method stub
-		if(obj instanceof Member) {
+		if (obj instanceof Member) {
 			Member member = (Member) obj;
-			if(id.equals(member.id)){
+			if (id.equals(member.id)) {
 				return true;
 			}
 		}
 		return false;
 	}
-   
+
 	@Override
 	public int hashCode() {
 		// TODO Auto-generated method stub
 		return id.hashCode();
 	}
-	
+
 }

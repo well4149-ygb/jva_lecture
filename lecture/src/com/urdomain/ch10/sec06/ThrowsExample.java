@@ -9,7 +9,7 @@ public class ThrowsExample {
 		}
 	}
 	
-	public static void findClass() throws ClassNotFoundException {
+	public static void findClass() throws ClassNotFoundException  {
 		Class clazz = Class.forName("java.lang.String2");
 	}
 }

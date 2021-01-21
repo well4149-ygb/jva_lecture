@@ -1,6 +1,8 @@
-package com.urdomain.ch11.sec15;
+package  com.urdomain.ch11.sec15;
 
 import java.text.DecimalFormat;
+import java.text.NumberFormat;
+import java.util.Locale;
 
 public class DecimalFormatExample {
 	public static void main(String[] args) {
@@ -45,7 +47,9 @@ public class DecimalFormatExample {
 		df = new DecimalFormat("#.# %");
 		System.out.println( df.format(num) );
 		
-		df = new DecimalFormat("\u00A4 #,###");
+		df = new DecimalFormat("\uC6D0 #,###");
 		System.out.println( df.format(num) );
+		
+		NumberFormat nf = NumberFormat.getCurrencyInstance(Locale.KOREAN);
 	}
 }

@@ -13,10 +13,8 @@ public class CompareExample {
 		System.out.println(result);
 		result = Objects.compare(s1, s3, new StudentComparator());
 		System.out.println(result);
-		
-		
-		
 	}
+	
 	static class Student{
 		int sno;
 		Student(int sno){

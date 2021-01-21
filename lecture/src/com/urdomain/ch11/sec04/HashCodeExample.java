@@ -6,6 +6,7 @@ import com.urdomain.ch06.sec04.Student;
 
 public class HashCodeExample {
 	public static void main(String[] args) {
+		
 		Student s1 = new Student(1,"ȫ�浿");
 		Student s2 = new Student(1,"ȫ�浿");
 		
@@ -16,13 +17,15 @@ public class HashCodeExample {
 	static class Student{
 		int sno;
 		String name;
+		
 		Student(int sno, String name){
 			this.name= name;
 			this.sno = sno;
 		}
+		
 		@Override
 		public int hashCode() {
-			// TODO Auto-generated method stub
+		
 			return Objects.hash(sno,name);
 		}
 		
