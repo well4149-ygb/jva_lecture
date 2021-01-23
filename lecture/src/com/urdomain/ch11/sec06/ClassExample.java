@@ -10,7 +10,7 @@ public class ClassExample {
 		System.out.println();
 		
 		try {
-			Class clazz2 = Class.forName("sec06.exam01_class.Car");
+			Class clazz2 = Class.forName("com.urdomain.ch11.sec06.Car1");
 			System.out.println(clazz2.getName());
 			System.out.println(clazz2.getSimpleName());
 			System.out.println(clazz2.getPackage().getName());

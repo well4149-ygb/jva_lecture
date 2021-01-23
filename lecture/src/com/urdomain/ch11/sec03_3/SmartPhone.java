@@ -11,7 +11,7 @@ public class SmartPhone {
 
 	@Override
 	public String toString() {
-		// TODO Auto-generated method stub
+		//  toString()을 재정의
 		return company+", "+os;
 	}
 	

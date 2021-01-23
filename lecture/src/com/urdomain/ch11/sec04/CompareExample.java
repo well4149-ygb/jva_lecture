@@ -26,7 +26,7 @@ public class CompareExample {
 
 		@Override
 		public int compare(Student a, Student b) {
-			// TODO Auto-generated method stub
+			
 			return Integer.compare(a.sno, b.sno);
 		}
 		

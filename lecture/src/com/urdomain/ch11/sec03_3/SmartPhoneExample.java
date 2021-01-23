@@ -6,6 +6,6 @@ public class SmartPhoneExample {
 
 		String strObj = myPhone.toString();
 		System.out.println(strObj);
-		System.out.println(myPhone);
+		System.out.println(myPhone);	//myPhone.toString()을 자동 호출해서 리턴값을 얻은 후에 출력
 	}
 }

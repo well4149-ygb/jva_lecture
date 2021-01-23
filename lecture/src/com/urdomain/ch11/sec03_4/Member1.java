@@ -27,7 +27,7 @@ public class Member1 implements Cloneable{
 	public Member1 getMember() {
 		Member1 cloned = null;
 		try {
-			cloned = (Member1)clone();
+			cloned = (Member1)clone();//재정의 된 clone()메서드 호출
 		}catch(CloneNotSupportedException e) {
 			e.printStackTrace();
 		}

@@ -1,6 +1,7 @@
 package com.urdomain.ch11.sec03_4;
 
 public class Counter {
+	
 	private int no;
 	
 	public Counter(int no) {
@@ -9,8 +10,6 @@ public class Counter {
 
 	@Override
 	protected void finalize() throws Throwable {
-		// TODO Auto-generated method stub
 		System.out.println(no+"ºó °´Ã¼ÀÇ finalize()°¡ ½ÇÇàµÊ");
 	}
-	
 }
