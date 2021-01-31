@@ -1,7 +1,7 @@
 package com.urdomain.ch07.sec07;
 
 public class Car {
-//필드
+	//필드
 	Tire frontLeftTire = new Tire("앞왼쪽", 6);
 	Tire frontRightTire = new Tire("앞오른쪽", 2);
 	Tire backLeftTire = new Tire("뒤왼쪽", 3);
