@@ -12,6 +12,6 @@ public class returnpratice {
 	static String mf() {
 		int x = 5;
 		
-		return x +"¤¾¤·";
+		return x +"ìž…ë‹ˆë‹¤.";
 	}
 }

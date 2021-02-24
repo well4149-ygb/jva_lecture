@@ -4,29 +4,29 @@ package com.urdomain.Test;
 import java.util.*;
 
 public class Lotto {
-//	1.·Î¶Ç¹øÈ£ »ý¼º±â(·£´ýÀ» ÀÌ¿ëÇÒ°Í)
-//	->¹è¿­À» »ý¼ºÇÑ´Ù.6°³v
-//	->·£´ýÀ» »ç¿ëÇÑ´Ù. (¹üÀ§´Â 1~46±îÁö·Î ¼³Á¤ÇÑ´Ù.)v
-//	->¹Ýº¹¹®À» »ç¿ëÇØ¼­ ÇØ´ç ¹è¿­¿¡ Áý¾î³Ö°í Ãâ·ÂÇÑ´Ù.v
-//	->¹Ýº¹¹® ¾È¿¡ Á¶°Ç¹®À» Áý¾î³Ö¾î¼­ Áßº¹À» Á¦°ÅÇÑ´Ù.v
-	//¹Ýº¹¹®À¸·Î ÇØ´ç ¹è¿­À» Ãâ·ÂÇÑ´Ù.v
+//1.ëžœë¤ì„ ì„ ì–¸í•œë‹¤.
+//2.ë¡œë˜ì— í•´ë‹¹í•˜ëŠ” ë°°ì—´ì„ ì„ ì–¸í•œë‹¤.
+//3.ë°˜ë³µë¬¸ì„ ëŒë ¤ì„œ ëžœë¤ìœ¼ë¡œ ìˆ«ìžë¥¼ ë„£ëŠ”ë‹¤.
+//4.ë°˜ë³µë¬¸ë‚´ì—ì„œ ì¤‘ë³µì²˜ë¦¬ë¥¼ í•œë‹¤.
+//5.í•´ë‹¹ ë°°ì—´ì„ ì¶œë ¥í•œë‹¤.	
 
 	public static void main(String[] args) {
 		Random rd = new Random();
 		int[] Lotto =new int[6];
 		
 		for(int i = 0;i < Lotto.length;i++) {
-			Lotto[i] = (int)(Math.random()*45)+1;//³­¼ö»ý¼º	
+			Lotto[i] = (int)(Math.random()*45)+1;//ëžœë¤ìœ¼ë¡œ ìˆ«ìžë¥¼ ìƒì„±	
 			for(int j=0; j < i; j++) {
-				if(Lotto[i] == Lotto[j]) {//Áßº¹Á¦°ÅºÎºÐ
+				if(Lotto[i] == Lotto[j]) {//ì¤‘ë³µë˜ëŠ” ê²½ìš° ì²˜ë¦¬
 					i--;
 				}
 			}
 		}
 		
-		System.out.println("¿À´ÃÀÇ ´çÃ·¹øÈ£");
+		System.out.println("ì˜¤ëŠ˜ì˜ ë¡œë˜ ë²ˆí˜¸");
 		System.out.println("==========================");
-		//for¹®À» ÀÌ¿ëÇØ¼­ Ãâ·Â
+		//í•´ë‹¹ ë°°ì—´ì„ ì¶œë ¥í•œë‹¤.(ë°˜ë³µë¬¸ì„ ì‚¬ìš©)
+		
 		for(int i = 0;i < Lotto.length;i++) {
 			System.out.print(Lotto[i]+" ");
 		}

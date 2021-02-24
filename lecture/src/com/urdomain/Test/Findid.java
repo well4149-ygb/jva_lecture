@@ -10,7 +10,7 @@ public class Findid {
     
 	String inputId() {
 		Scanner sc = new Scanner(System.in);
-		System.out.print("ÀÌ¸§À» ÀÔ·ÂÇØÁÖ¼¼¿ä.:");
+		System.out.print("ì•„ì´ë””ë¥¼ ì…ë ¥í•´ ì£¼ì„¸ìš”.:");
 		String name = sc.next();
 		
 		return name;
@@ -18,7 +18,7 @@ public class Findid {
 	
 	String inputEmail() {
 		Scanner sc = new Scanner(System.in);
-		System.out.print("ÀÌ¸ŞÀÏÀ» ÀÔ·ÂÇØÁÖ¼¼¿ä.:");
+		System.out.print("ì´ë©”ì¼ì„ ì…ë ¥í•´ ì£¼ì„¸ìš”:");
 		String email = sc.next();
 		
 		return email;
@@ -27,24 +27,24 @@ public class Findid {
 	public static void searchIdasteric(String Name , String Email) {
       
 	  Findid fid = new Findid();
-	  String[] user = {"well4149","well4149@naver.com","¾ç°æºó"};
+	  String[] user = {"well4149","well4149@naver.com","ì–‘ê²½ë¹ˆ"};
       fid.inputId();
       
       String outputId = "well4149";
-             outputId = outputId.replaceAll("well4149" , "wel***49");//¼Ò½ºÂüÁ¶ÇÏ¸é¼­ °øºÎÇÏ±â
+             outputId = outputId.replaceAll("well4149" , "wel***49");//ï¿½Ò½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¸é¼­ ï¿½ï¿½ï¿½ï¿½ï¿½Ï±ï¿½
       String email    = "well4149@naver.com";
       
       	while(true) {
       		if(email.equals(fid.inputEmail())) {
-      			System.out.println("±ÍÇÏ°¡ Ã£´Â ¾ÆÀÌµğ´Â"+outputId+"ÀÔ´Ï´Ù.");break;
+      			System.out.println("ì°¾ìœ¼ì‹œëŠ” ì•„ì´ë””ëŠ”"+outputId+"ì…ë‹ˆë‹¤.");break;
       		}else{
-      			System.out.println("ÀÌ¸ŞÀÏÀÌ Àß¸ø µÇ¾ú½À´Ï´Ù.");
+      			System.out.println("í•´ë‹¹ ì•„ì´ë””ê°€ ì—†ìŠµë‹ˆë‹¤.");
       		}
       	}
     }
 	
 	public static void run() {
 		Findid fid = new Findid();
-		Findid.searchIdasteric("¾ç°æºó", "well4149@naver.com");
+		Findid.searchIdasteric("ï¿½ï¿½ï¿½ï¿½", "well4149@naver.com");
 	}
 }

@@ -12,28 +12,28 @@ public class Login {
 	public void login(String name, String pw) {
 		Scanner      sc = new Scanner(System.in);
 	    String[]   user = {"well4149","11111"};
-		String       id = "well4149";//¾ÆÀÌµð
-		String password = "11111";// ÆÐ½º¿öµå
+		String       id = "well4149";//ï¿½ï¿½ï¿½Ìµï¿½
+		String password = "11111";// ï¿½Ð½ï¿½ï¿½ï¿½ï¿½ï¿½
 		
-		System.out.println("·Î±×ÀÎ");
-		System.out.print("¾ÆÀÌµð¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä.");
+		System.out.println("ï¿½Î±ï¿½ï¿½ï¿½");
+		System.out.print("ï¿½ï¿½ï¿½Ìµï¿½ ï¿½Ô·ï¿½ï¿½ï¿½ï¿½Ö¼ï¿½ï¿½ï¿½.");
 		String inputid = sc.next();
 		
-		System.out.print("ºñ¹Ð¹øÈ£¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä.");
+		System.out.print("ï¿½ï¿½Ð¹ï¿½È£ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½ï¿½ï¿½Ö¼ï¿½ï¿½ï¿½.");
 		String inputpw = sc.next();
 		
-			if(id.equals(inputid) && password.equals(inputpw)) {//·Î±×ÀÎ Áß¿äºÎºÐ
-				System.out.println("·Î±×ÀÎÀÌ µÇ¾ú½À´Ï´Ù.");
+			if(id.equals(inputid) && password.equals(inputpw)) {//ï¿½Î±ï¿½ï¿½ï¿½ ï¿½ß¿ï¿½Îºï¿½
+				System.out.println("ï¿½Î±ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ç¾ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
 			}else {
-				System.out.println("¾ÆÀÌµð³ª ºñ¹Ð¹øÈ£°¡ ÀÏÄ¡ÇÏÁö ¾Ê½À´Ï´Ù.");
+				System.out.println("ï¿½ï¿½ï¿½Ìµï¿½ ï¿½ï¿½Ð¹ï¿½È£ï¿½ï¿½ ï¿½ï¿½Ä¡ï¿½ï¿½ï¿½ï¿½ ï¿½Ê½ï¿½ï¿½Ï´ï¿½.");
 			}
 		
 		sc.close();
 	}
 	
 	void run() {
-		Login log = new Login();
-		log.login("well4149", "11111");
+		//Login log = new Login();
+		login("well4149", "11111");
 	}
 }
 
